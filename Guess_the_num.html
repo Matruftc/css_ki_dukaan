@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="guess.css">
+</head>
+<body>
+     
+    <video autoplay loop muted src="video (1440p).mp4"></video>
+
+   <div class="con">
+    <h2 class="con">Guess Number</h2>
+
+    <p id="demo"></p>
+</div>
+    <script>
+
+        // Gets user input
+        var num = prompt("What is your favorite number? ");
+
+        // Uses user input to print out information
+        console.log(num + "?! That's my favorite number too!");
+
+        // Generate a random number between 0 and 1 (not inclusive)
+        var randomNum = Math.floor(Math.random() * 10) + 1; // Change 1 to the range you want
+
+        // Check if the user's guess is correct
+        if (num == randomNum) {
+            greeting = "You guessed the right number!";
+        } else {
+            greeting = "Sorry, better luck next time. The correct number was " + randomNum;
+        }
+
+        // Display the result
+        document.getElementById("demo").innerHTML = greeting;
+
+    </script>
+
+</body>
+
+</html>

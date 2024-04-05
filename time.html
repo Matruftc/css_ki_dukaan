@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Time in JavaScript</title>
+    <link rel="stylesheet" href="time.css">
+</head>
+<body>
+    <script>
+        // Get the current date and time
+        var currentDate = new Date();
+
+        // Get hours, minutes, and seconds
+        var hours = currentDate.getHours();
+        var minutes = currentDate.getMinutes();
+        var seconds = currentDate.getSeconds();
+
+        // Format the time with leading zeros
+        var formattedTime = (hours < 10 ? '0' : '') + hours + ':' + (minutes < 10 ? '0' : '') + minutes + ':' + (seconds < 10 ? '0' : '') + seconds;
+
+        // Display the current time
+        document.body.innerHTML = 'Current Time: ' + formattedTime;
+    </script>
+</body>
+</html>

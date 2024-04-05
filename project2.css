@@ -1,0 +1,47 @@
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom:0;
+    height: 600px auto;
+    width: 100% ;                                                                      ;
+    min-width: 100%; 
+    min-height: 100%;
+
+}
+
+
+div.introduction{
+    
+    position: absolute;
+    padding-top: 20px; 
+    padding-left: 40px; 
+    padding-bottom: 200px;                                                                                                                 
+}
+
+p.intro{
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    padding-top: 300px; 
+    padding-left: 360px;
+    padding-bottom: 200px;
+}
+
+a.intro{
+
+    font-size: 22px;
+    color: aliceblue;
+    display: block;
+    padding-bottom: 4px;
+    float: inline-end;
+    align-items: center;
+    justify-content: center;
+}
+
+a:hover{
+    background-color: rgb(97, 97, 97);
+}
+p.foot{         
+    color: aliceblue;
+}

@@ -1,0 +1,18 @@
+Video{
+    position:absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+
+div.con{
+    position: relative;
+    z-index: 2;
+    padding-top: 260px;
+    padding-left: 340px;
+    font-size: 40px;
+}
+
+
+   

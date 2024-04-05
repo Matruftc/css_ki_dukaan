@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Jokes</title>
+
+
+  <link rel="stylesheet" href="thought.css">
+</head>
+<body>
+
+  <video id="myvideo" autoplay loop muted>
+    <source src="pexels_videos_2025634 (720p).mp4" type="video/mp4">
+</video>
+
+<div id="joke-container"></div>
+
+<script>
+  // Array of Jokes
+  const jokes = [
+    "The only limit to our realization of tomorrow will be our doubts of today.",
+    "Why did the scarecrow win an award Because he was outstanding in his field!",
+    "What do you call fake spaghetti An impasta" ,
+    "Why don't scientists trust atoms Because they make up everything",
+    "Did you hear about the mathematician who’s afraid of negative numbers He’ll stop at nothing to avoid them.",
+    "How does a penguin build its house?Igloos it together!",
+    "Why did the bicycle fall over?Because it was two-tired",
+    "What do you get when you cross a snowman and a vampire? Frostbite,",
+    "Why don't skeletons fight each other? They don't have the guts.",
+    "What did one hat say to the other?Stay here, I'm going on ahead",
+    "Why did the coffee file a police report?It got mugged."
+
+  ];
+
+  // Function to display thoughts in a loop
+  function displayJokes() {
+    const jokeContainer = document.getElementById('joke-container');
+    let index = 0;
+
+    function showJoke() {
+      jokeContainer.innerHTML = jokes[index];
+      index = (index + 1) % jokes.length;
+
+      // Display a new thought every 3 seconds (adjust as needed)
+      setTimeout(showJoke, 3000);
+    }
+
+    // Start the loop
+    showJoke();
+  }
+
+  // Call the function to start displaying thoughts
+  displayJokes();
+</script>
+
+</body>
+</html>

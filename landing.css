@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Amita&family=Barlow+Condensed:wght@200&family=Bungee+Spice&family=Salsa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amita&family=Barlow+Condensed:wght@200&family=Bungee+Spice&family=Calligraffitti&family=Salsa&display=swap');
+
+#myVideo {
+    position:absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+   
+  }
+  
+div.a{
+position:absolute ;
+font-family: 'Amita', serif;
+font-family: 'Barlow Condensed', sans-serif;
+font-family: 'Bungee Spice', sans-serif;
+font-family: 'Salsa', cursive;
+padding-left: 160px;
+padding-right: 80px;
+padding-top: 200px;
+padding-bottom: 30px;
+font-size: 40px;
+align-items: center;
+justify-content: center;
+}
+
+div.b{
+position: fixed;
+padding-left: 1100px;
+padding-top: 500px;
+font-family: 'Amita', serif;
+font-family: 'Barlow Condensed', sans-serif;
+font-family: 'Bungee Spice', sans-serif;
+font-family: 'Calligraffitti', cursive;
+font-family: 'Salsa', cursive;
+
+}

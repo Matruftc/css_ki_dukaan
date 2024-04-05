@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Looping Thoughts</title>
+
+
+  <link rel="stylesheet" href="thought.css">
+</head>
+<body>
+
+  <video id="myvideo" autoplay loop muted>
+    <source src="production_id_4438080 (1080p).mp4" type="video/mp4">
+</video>
+
+<div id="thought-container"></div>
+
+<script>
+  // Array of thoughts
+  const thoughts = [
+    "The only limit to our realization of tomorrow will be our doubts of today.",
+    "Believe you can and you're halfway there.",
+    "The future belongs to those who believe in the beauty of their dreams.",
+    "Don't watch the clock; do what it does. Keep going.",
+    "Success is not final, failure is not fatal: It is the courage to continue that counts.",
+    "Believe you can and you're halfway there." ,
+    "The only way to do great work is to love what you do." ,
+    "Don't watch the clock; do what it does. Keep going." ,
+    "Success is not final, failure is not fatal: It is the courage to continue that counts." ,
+    "Your time is limited, don't waste it living someone else's life." ,
+    "The future belongs to those who believe in the beauty of their dreams." ,
+    "It's not about how hard you hit. It's about how hard you can get hit and keep moving forward." ,
+    "The only place where success comes before work is in the dictionary." ,
+    "Don't be pushed around by the fears in your mind. Be led by the dreams in your heart." ,
+    "The only limit to our realization of tomorrow will be our doubts of today.",
+    "Believe in yourself and all that you are. Know that there is something inside you that is greater than any obstacle." ,
+    "I find that the harder I work, the more luck I seem to have.", 
+    "Success is stumbling from failure to failure with no loss of enthusiasm.", 
+    "The only person you are destined to become is the person you decide to be.", 
+    "Opportunities don't happen. You create them.", 
+    "Do not wait to strike till the iron is hot, but make it hot by striking.", 
+    "Don't be afraid to give up the good to go for the great.", 
+    "The way to get started is to quit talking and begin doing.", 
+    "Your attitude, not your aptitude, will determine your altitude.",
+    "Success usually comes to those who are too busy to be looking for it.",
+    "You are never too old to set another goal or to dream a new dream." ,
+    "The only thing standing between you and your goal is the story you keep telling yourself as to why you can't achieve it.", 
+    "Success is not in what you have, but who you are.", 
+    "The only way to achieve the impossible is to believe it is possible." ,
+    "Don't be discouraged. It's often the last key in the bunch that opens the lock." ,
+    "Success is not just about making money. It's about making a difference." ,
+    "The only place where your dream becomes impossible is in your own thinking." ,
+    "You are what you do, not what you say you'll do." ,
+    "Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful.", 
+    "If you are not willing to risk the usual, you will have to settle for the ordinary." ,
+    "Don't be pushed around by fears in your mind. Be led by the dreams in your heart." ,
+    "Challenges are what make life interesting and overcoming them is what makes life meaningful.",
+    "Success is to be measured not so much by the position that one has reached in life as by the obstacles which he has overcome." ,
+    "If you want to achieve greatness, stop asking for permission." ,
+    "Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work." ,
+    "Success is not final, failure is not fatal: It is the courage to continue that counts." ,
+    "The only limit to our realization of tomorrow will be our doubts of today." ,
+    "Don't let yesterday take up too much of today.",
+    "Your time is limited, don't waste it living someone else's life.",
+    "If you are working on something that you really care about, you don't have to be pushed. The vision pulls you." ,
+    "The only thing standing between you and your goal is the story you keep telling yourself as to why you can't achieve it.",
+    "The only way to do great work is to love what you do." ,
+    "The only place where success comes before work is in the dictionary." ,
+    "The only person you are destined to become is the person you decide to be.",
+    "The future belongs to those who believe in the beauty of their dreams." ,
+    "Success is stumbling from failure to failure with no loss of enthusiasm." ,
+    "Don't be pushed around by the fears in your mind. Be led by the dreams in your heart." ,
+    "Believe in yourself and all that you are. Know that there is something inside you that is greater than any obstacle." ,
+    "I find that the harder I work, the more luck I seem to have." ,
+    "Success usually comes to those who are too busy to be looking for it." ,
+    "You are never too old to set another goal or to dream a new dream." ,
+    "The only way to achieve the impossible is to believe it is possible." ,
+    "Don't be afraid to give up the good to go for the great." ,
+    "The only limit to our realization of tomorrow will be our doubts of today." ,
+    "Don't watch the clock; do what it does. Keep going." ,
+    "Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful.",
+    "Your attitude, not your aptitude, will determine your altitude." ,
+    "Opportunities don't happen. You create them.",
+    "Do not wait to strike till the iron is hot, but make it hot by striking." ,
+    "Don't be discouraged. It's often the last key in the bunch that opens the lock." ,
+    "Success is not just about making money. It's about making a difference." ,
+    "The only place where your dream becomes impossible is in your own thinking.",
+    "You are what you do, not what you say you'll do." ,
+    "Success is not final, failure is not fatal: It is the courage to continue that counts." ,
+    "If you are not willing to risk the usual, you will have to settle for the ordinary." ,
+    "Challenges are what make life interesting and overcoming them is what makes life meaningful." ,
+    "Success is to be measured not so much by the position that one has reached in life as by the obstacles which he has overcome." ,
+    "If you want to achieve greatness, stop asking for permission.",
+    "Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work." ,
+    "Success is not final, failure is not fatal: It is the courage to continue that counts." ,
+    "The only limit to our realization of tomorrow will be our doubts of today." ,
+    "Don't let yesterday take up too much of today." ,
+    "Your time is limited, don't waste it living someone else's life.",
+    "If you are working on something that you really care about, you don't have to be pushed. The vision pulls you.",
+    "The only thing standing between you and your goal is the story you keep telling yourself as to why you can't achieve it." ,
+    "The only way to do great work is to love what you do." ,
+    "The only person you are destined to become is the person you decide to be." ,
+    "The future belongs to those who believe in the beauty of their dreams.",
+    "Success is stumbling from failure to failure with no loss of enthusiasm." ,
+    "Don't be pushed around by the fears in your mind. Be led by the dreams in your heart." ,
+    "Believe in yourself and all that you are. Know that there is something inside you that is greater than any obstacle." ,
+    "I find that the harder I work, the more luck I seem to have." ,
+    "Success usually comes to those who are too busy to be looking for it." ,
+    "You are never too old to set another goal or to dream a new dream." ,
+    "The only way to achieve the impossible is to believe it is possible." ,
+    "Don't be afraid to give up the good to go for the great.",
+    "The only limit to our realization of tomorrow will be our doubts of today.",
+    "Don't watch the clock; do what it does. Keep going." ,
+    "Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful." ,
+    "Your attitude, not your aptitude, will determine your altitude." ,
+    "Opportunities don't happen. You create them." ,
+    "Do not wait to strike till the iron is hot, but make it hot by striking.",
+    "Don't be discouraged. It's often the last key in the bunch that opens the lock.",
+    "Success is not just about making money. It's about making a difference.",
+    "The only place where your dream becomes impossible is in your own thinking." ,
+    "You are what you do, not what you say you'll do." ,
+    "Success is not final, failure is not fatal: It is the courage to continue that counts.",
+    "If you are not willing to risk the usual, you will have to settle for the ordinary.",
+    "Challenges are what make life interesting and overcoming them is what makes life meaningful.",
+  ];
+
+  // Function to display thoughts in a loop
+  function displayThoughts() {
+    const thoughtContainer = document.getElementById('thought-container');
+    let index = 0;
+
+    function showThought() {
+      thoughtContainer.innerHTML = thoughts[index];
+      index = (index + 1) % thoughts.length;
+
+      // Display a new thought every 3 seconds (adjust as needed)
+      setTimeout(showThought, 3000);
+    }
+
+    // Start the loop
+    showThought();
+  }
+
+  // Call the function to start displaying thoughts
+  displayThoughts();
+</script>
+
+</body>
+</html>

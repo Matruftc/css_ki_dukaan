@@ -1,0 +1,15 @@
+p{
+    font-size: 40;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    
+}
+div.a{
+    background-color: rgb(0, 255, 255);
+
+}
+
+div.b{
+ opacity: 90%;
+ background-color: rgb(142, 142, 247);   
+}

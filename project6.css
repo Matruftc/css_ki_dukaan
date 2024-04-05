@@ -1,0 +1,33 @@
+div.main{
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 20px; 
+    padding-left: 30px; 
+    line-height: 1vw;
+    letter-spacing: 0.1vw; 
+}
+
+div.content{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 200px;
+    background-color: rgb(159, 79, 206);
+    width: 1440px;
+}
+h2.content{
+    color: transparent;
+    line-height: 5vw;
+    letter-spacing: 0.6vw;
+    font-size: 10vw;
+    -webkit-text-stroke: 2.4px #000;
+}
+
+*::selection{
+    background-color: white;
+    color: #000;
+}
+

@@ -1,0 +1,33 @@
+div.a
+{
+    height:50px;
+    width:400px;
+    background-color: coral;
+    overflow:visible;
+}
+
+div.b
+{
+    height:50px;
+    width:400px;
+    background-color: rgb(8, 214, 255);
+    overflow:hidden;
+}
+
+div.c
+{
+    height:50px;
+    width:400px;
+    background-color: rgb(122, 135, 138);
+    overflow:scroll;
+}
+
+div.d
+{
+    height:70px;
+    width:200px;
+    background-color: rgb(255, 230, 88);
+    overflow:auto;
+    justify-content: center;
+    align-items: center;
+}

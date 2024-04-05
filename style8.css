@@ -1,0 +1,12 @@
+p.one{
+    border:20px solid blue;
+    border-radius: 15px;
+}
+
+p.two{
+    border-left:8px solid rgb(81, 81, 255);
+}
+
+p.three{
+    border-bottom:10px solid pink;
+}

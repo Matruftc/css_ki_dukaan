@@ -1,0 +1,19 @@
+div{
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-right: 50px;
+    padding-left: 200px;
+
+    background-color: rgb(247, 0, 194);
+
+    box-sizing: border-box;
+
+    box-shadow: 20px;
+}
+
+div.a{
+    padding: 25px 25px 25px 25px;
+    border-color: blanchedalmond;
+    box-sizing: border-box ;
+    box-shadow:200px;
+}

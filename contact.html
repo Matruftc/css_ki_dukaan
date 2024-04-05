@@ -1,0 +1,42 @@
+<html>
+    <head><link rel="stylesheet" href="contact.css"></head>
+    <body>
+    <button  type="button" class="collapsible">
+        Section 1
+    </button>
+        <div class="contact">
+            <p>           " Start by talking who you are at this point of your career and life journey, 
+                and what your current role is. Don't hesitate to mention a recent accomplishment. 
+                Include some basics like your name, where you live,
+                and your job title. Briefly describe the scope of your responsibilities too. "</p>
+        </div>
+    
+
+    <button  type="button" class="collapsible">Section 2</button>
+        <div class="contact">
+            <p>           " Start by talking who you are at this point of your career and life journey, 
+                and what your current role is. Don't hesitate to mention a recent accomplishment. 
+                Include some basics like your name, where you live,
+                and your job title. Briefly describe the scope of your responsibilities too. "</p>
+        </div>
+    
+
+     
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+         content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+    </script>
+
+</body></html>
